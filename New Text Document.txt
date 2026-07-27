@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age, experience;
+    double weight;
+
+    cout << "Enter the age: ";
+    cin >> age;
+
+    cout << "Enter the weight capacity in kg: ";
+    cin >> weight;
+
+    cout << "Enter the number of years of experience you got: ";
+    cin >> experience;
+
+    if (age >= 18 && age <= 24 && weight >= 50) {
+ cout << "QUALIFIED TO APPLY" << "\n";
+    }
+    else if (age > 24 && experience > 4 && weight >= 35) {
+        cout << "QUALIFIED TO APPLY" << "\n";
+    }
+    else {
+        cout << "NOT QUALIFIED TO APPLY" << "\n";
+    }
+
+    return 0;
+}
